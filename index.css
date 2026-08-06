@@ -32,3 +32,16 @@ img {
     margin: 0 auto;
     display: block;
 }
+
+
+a {
+    color: rgb(188, 188, 238);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(191, 194, 255);
+    text-decoration: underline;
+    text-decoration-color: rgb(191, 194, 255);
+    cursor: pointer;
+}
