@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(0deg, rgb(220, 255, 189) 5%, rgb(204, 134, 209) 95%);
+}
+div {
+    background-color: rgb(216, 255, 255);
+    border: 0.2;
+    border-color: silver;
+    /*border-style: solid;*/
+    border-radius: 50px;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 25px;
+    color: aliceblue;
+    font-family: "Open Sans", sans-serif;
+    padding: 20px;
+    background: radial-gradient(circle, rgb(255, 175, 123) 5%, rgb(215, 109, 119) 50%, rgb(58, 28, 113) 95%);
+}
+
+div span {
+    text-align: center;
+    display: block;
+    font-weight: 800;
+}
+
+img {
+    opacity: 1;
+    margin: 0 auto;
+    display: block;
+}
