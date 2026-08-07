@@ -8,9 +8,6 @@ body {
 }
 div {
     background-color: rgb(216, 255, 255);
-    border: 0.2;
-    border-color: silver;
-    /*border-style: solid;*/
     border-radius: 50px;
     width: 80%;
     margin: 0 auto;
