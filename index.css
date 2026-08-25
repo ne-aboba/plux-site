@@ -4,36 +4,72 @@
 }
 
 body {
-    background: linear-gradient(0deg, rgb(220, 255, 189) 5%, rgb(204, 134, 209) 95%);
-}
-div {
-    background-color: rgb(216, 255, 255);
-    border-radius: 50px;
-    width: 80%;
-    margin: 0 auto;
-    font-size: 16px;
-    color: aliceblue;
-    font-family: "Open Sans", sans-serif;
-    padding: 20px;
-    background: radial-gradient(circle, rgb(255, 175, 123) 5%, rgb(215, 109, 119) 50%, rgb(58, 28, 113) 95%);
+    background: rgb(242, 242, 242);
 }
 
-div span {
-    text-align: center;
-    display: block;
-    font-weight: 800;
-}
+/*@media (max-width: 480px)/ {*/
+    /*текст*/
+    .pol {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 
-img {
-    opacity: 1;
-    margin: 0 auto;
-    display: block;
-}
+    .pol div {
 
 
+        border-radius: 21px;
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+        background: rgb(248, 248, 248);
+
+
+
+        font-size: 15px;
+        color: rgb(0, 0, 0);
+        font-family: "Open Sans", sans-serif;
+        padding: 20px;
+        margin-bottom: 10px;
+        margin-left: 5px;
+        margin-left: 5px;
+    }
+
+    div span {
+        text-align: center;
+        display: block;
+        font-weight: 800;
+    }
+
+    div ok {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    img {
+        opacity: 1;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .A { grid-area: a; }
+    .B { grid-area: b; }
+    .C { grid-area: c; }
+    .D { grid-area: d; }
+    .E { grid-area: e; }
+    .F { grid-area: f; }
+    .G { grid-area: g; }
+/*}
+
+/* Ссылки*/
 a {
-    color: rgb(188, 188, 238);
+    color: rgb(146, 233, 244);
     text-decoration: none;
+}
+
+.bat {
+    transition: transform 0.2s ease-in-out;
+}
+.bat:hover {
+  transform: scale(1.01);
+  cursor: pointer;
 }
 
 a:hover {
