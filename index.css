@@ -7,63 +7,41 @@ body {
     background: rgb(242, 242, 242);
 }
 
-/*@media (max-width: 480px)/ {*/
-    /*текст*/
-    .pol {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    }
+.pol div {
 
-    .pol div {
+    border-radius: 21px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    background: rgb(248, 248, 248);
 
-
-        border-radius: 21px;
-        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-        background: rgb(248, 248, 248);
-
-
-
-        font-size: 15px;
-        color: rgb(0, 0, 0);
-        font-family: "Open Sans", sans-serif;
-        padding: 20px;
-        margin-bottom: 10px;
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-
-    div span {
-        text-align: center;
-        display: block;
-        font-weight: 800;
-    }
-
-    div ok {
-        font-size: 16px;
-        font-weight: 600;
-    }
-
-    img {
-        opacity: 1;
-        margin: 0 auto;
-        display: block;
-    }
-
-    .A { grid-area: a; }
-    .B { grid-area: b; }
-    .C { grid-area: c; }
-    .D { grid-area: d; }
-    .E { grid-area: e; }
-    .F { grid-area: f; }
-    .G { grid-area: g; }
-/*}
-
-/* Ссылки*/
-a {
-    color: rgb(146, 233, 244);
-    text-decoration: none;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    font-family: "Open Sans", sans-serif;
+    padding: 20px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
 }
 
+div span {
+    text-align: center;
+    display: block;
+    font-weight: 800;
+}
+
+div ok {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+img {
+    opacity: 1;
+    margin: 0 auto;
+    display: block;
+}
+
+
+/* кнопки*/
 .bat {
     transition: transform 0.2s ease-in-out;
 }
@@ -72,9 +50,107 @@ a {
   cursor: pointer;
 }
 
-a:hover {
-    color: rgb(191, 194, 255);
-    text-decoration: underline;
-    text-decoration-color: rgb(191, 194, 255);
-    cursor: pointer;
+.A { grid-area: a; }
+.B { grid-area: b; }
+.C { grid-area: c; }
+.D { grid-area: d; }
+.E { grid-area: e; }
+.F { grid-area: f; }
+.G { grid-area: g; }
+.I { grid-area: i; }
+
+@media (max-width: 480px) {
+    .pol {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .plux {
+        grid-template-areas:
+        "i i i i i i" 
+        "a a a a a a"
+        "b b e e e e"
+        "c c c f f f"
+        "d d d d d d"
+        "g g g g g g";
+    }
+
+    .pluxin {
+        grid-template-areas:
+        "i i i i i i"
+        "a a a a a a"
+        "b b d d d d"
+        "c c c f f f"
+        "g g g g g g";
+    }
+
+    .rizik {
+        grid-template-areas:
+        "i i i i i i"
+        "a a a a a a"
+        "b b e e e e"
+        "c c c f f f"
+        "g g g g g g";
+    }
+}
+
+@media (min-width: 900px) {
+    .pol {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .pol div {
+        font-size: 22px;
+    }
+
+    div ok {
+    font-size: 23px;
+    }
+
+    .A {
+        display: none;
+    }
+
+    .plux {
+        grid-template-areas:
+        "i i i i i i i i i g g g g g g g g g"
+        "i i i i i i i i i g g g g g g g g g"
+        "i i i i i i i i i g g g g g g g g g"
+        "i i i i i i i i i g g g g g g g g g"
+        "i i i i i i i i i g g g g g g g g g"
+        "i i i i i i i i i g g g g g g g g g"
+        "i i i i i i i i i g g g g g g g g g"
+        "i i i i i i i i i g g g g g g g g g"
+        "i i i i i i i i i g g g g g g g g g"
+        "b b b c c c d d d d e e e e f f f f";
+    }
+
+    .pluxin {
+        grid-template-areas:
+        "i i i i i i i i i g g g g g g g g g"
+        "i i i i i i i i i g g g g g g g g g"
+        "i i i i i i i i i g g g g g g g g g"
+        "i i i i i i i i i g g g g g g g g g"
+        "i i i i i i i i i g g g g g g g g g"
+        "i i i i i i i i i g g g g g g g g g"
+        "i i i i i i i i i g g g g g g g g g"
+        "i i i i i i i i i g g g g g g g g g"
+        "i i i i i i i i i g g g g g g g g g"
+        "b b b c c c c c d d d d d f f f f f";
+    }
+
+    .rizik {
+        grid-template-areas:
+        "i i i i i i i i i g g g g g g g g g"
+        "i i i i i i i i i g g g g g g g g g"
+        "i i i i i i i i i g g g g g g g g g"
+        "i i i i i i i i i g g g g g g g g g"
+        "i i i i i i i i i g g g g g g g g g"
+        "i i i i i i i i i g g g g g g g g g"
+        "i i i i i i i i i g g g g g g g g g"
+        "i i i i i i i i i g g g g g g g g g"
+        "i i i i i i i i i g g g g g g g g g"
+        "b b b c c c c c e e e e e f f f f f";
+    }
 }
