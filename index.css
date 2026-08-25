@@ -11,7 +11,7 @@ body {
     /*текст*/
     .pol {
         display: grid;
-        grid-template-columns: 1fr 1.5fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 
     .pol div {
@@ -29,7 +29,7 @@ body {
         padding: 20px;
         margin-bottom: 10px;
         margin-left: 5px;
-        margin-left: 5px;
+        margin-right: 5px;
     }
 
     div span {
