@@ -28,4 +28,4 @@ function zero(a) {
 function update() {
     cloc.innerText = time_html();
 }
-setInterval(update, 250);
+setInterval(update, 50);
